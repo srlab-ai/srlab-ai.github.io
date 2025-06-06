@@ -12,14 +12,17 @@
       background-color: #f9f9f9;
       color: #333;
     }
-    <nav style="background:#eee; padding:0.5rem; text-align:center;">
-  <a href="index.html" style="margin:0 1rem;">Home</a>
-  <a href="about.html" style="margin:0 1rem;">About</a>
-  <a href="projects.html" style="margin:0 1rem;">Projects</a>
-  <a href="team.html" style="margin:0 1rem;">Team</a>
-  <a href="contact.html" style="margin:0 1rem;">Contact</a>
-</nav>
-
+    nav {
+      background: #eee;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
     header {
       background: #111;
       color: #fff;
@@ -69,8 +72,16 @@
 </head>
 <body>
 
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="team.html">Team</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
 <header> 
-<img src="images/sr-lab.png" alt="Scientific Research Lab Logo" style="height:80px; margin-bottom:1rem;" />
+  <img src="images/sr-lab.png" alt="Scientific Research Lab Logo" style="height:80px; margin-bottom:1rem;" />
   <h1>ScientisR Research Lab</h1>
   <p class="subtitle">Empowering Responsible AI through Safety, Health, and Skill Development</p>
 </header>
