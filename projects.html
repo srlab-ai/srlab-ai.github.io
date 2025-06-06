@@ -3,11 +3,131 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About - ScientisR Lab</title>
+  <title>Projects - ScientisR Lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    nav {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #0077cc;
+    }
+    header {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    p.subtitle {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+    section {
+      max-width: 960px;
+      margin: auto;
+      padding: 3rem 2rem;
+    }
+    h2 {
+      font-size: 1.6rem;
+      color: #0077cc;
+      margin-bottom: 1rem;
+    }
+    .project {
+      margin-bottom: 2rem;
+    }
+    .project a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+      background: #f1f1f1;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>About Our Lab</h1>
-  <p>We are a multidisciplinary AI research lab focused on safety, health, and equity.</p>
-  <p><a href="index.html">← Back to Home</a></p>
-</body>
-</html>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="team.html">Team</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+  <h1>Our Projects</h1>
+  <p class="subtitle">AI Tools, Open Research, and Community Engagement</p>
+</header>
+
+<section>
+  <h2>🔬 Tools and Benchmarks (Led by Our Lab)</h2>
+
+  <div class="project">
+    <strong><a href="https://vectorinstitute.github.io/HumaniBench/" target="_blank">HumaniBench</a></strong><br>
+    <em>Led and developed by ScientisR Lab in collaboration with Vector Institute</em><br>
+    A human-centric benchmark to evaluate fairness, empathy, robustness, and multilinguality in vision-language models (VLMs).
+  </div>
+
+  <div class="project">
+    <strong><a href="https://vectorinstitute.github.io/FairSense-AI/" target="_blank">FairSense-AI</a></strong><br>
+    <em>Toolkit created by our team to support fairness audits and sustainability evaluations in AI pipelines</em><br>
+    Provides checklists and explainability modules for risk reporting and responsible AI deployment.
+  </div>
+</section>
+
+<section>
+  <h2>🤝 Collaborations & Contributions</h2>
+
+  <div class="project">
+    <strong><a href="https://unbias-mkdocs.readthedocs.io/en/latest/" target="_blank">Unbias</a></strong><br>
+    <em>Contributed to model auditing strategies and documentation during early research phases</em><br>
+    Led by the Bias and Explainability team at Vector Institute.
+  </div>
+
+  <div class="project">
+    <strong>AI for Public Health Equity</strong><br>
+    <em>Co-investigator on projects with Ontario Public Health and academic institutions</em><br>
+    Focus on equitable pandemic response, algorithmic bias, and policy impact evaluation.
+  </div>
+
+  <div class="project">
+    <strong>Hugging Face Open Releases</strong><br>
+    <em>Released datasets and fine-tuned models under <a href="https://huggingface.co/srlab-ai" target="_blank">srlab-ai</a></em><br>
+    Includes disinformation benchmarks, small VLMs, and safety-aligned model variants.
+  </div>
+</section>
+
+<section>
+  <h2>🎓 Teaching, Talks & Trainings</h2>
+
+  <div class="project">
+    <strong>LLM Bootcamps</strong><br>
+    Delivered hands-on
