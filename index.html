@@ -9,64 +9,88 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #f9f9f9;
+      background-color: #fdfdfd;
       color: #333;
     }
+
     nav {
-      background: #eee;
-      padding: 0.5rem;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      padding: 1rem 0;
       text-align: center;
     }
     nav a {
-      margin: 0 1rem;
+      margin: 0 1.2rem;
       text-decoration: none;
-      color: #333;
-      font-weight: bold;
+      color: #111;
+      font-weight: 600;
+      transition: color 0.3s ease;
     }
+    nav a:hover {
+      color: #0077cc;
+    }
+
     header {
-      background: #111;
-      color: #fff;
-      padding: 2rem 1rem;
       text-align: center;
+      padding: 3rem 1rem 2rem 1rem;
     }
-    h1 {
+    header img {
+      height: 90px;
+      margin-bottom: 1rem;
+    }
+    header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.6rem;
+      color: #111;
     }
-    p.subtitle {
+    header p.subtitle {
+      color: #666;
       margin-top: 0.5rem;
-      font-size: 1.2rem;
-      color: #ccc;
+      font-size: 1.1rem;
     }
+
     section {
-      padding: 3rem 2rem;
       max-width: 960px;
       margin: auto;
+      padding: 3rem 2rem;
     }
+    .section-title {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: #222;
+    }
+
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 2rem;
     }
     .card {
-      background: white;
-      padding: 1.5rem;
+      background: #fff;
+      border: 1px solid #eaeaea;
       border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.08);
-      transition: transform 0.3s;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+      transition: transform 0.3s ease;
     }
     .card:hover {
       transform: translateY(-5px);
     }
-    h2 {
-      font-size: 1.4rem;
+    .card h2 {
+      font-size: 1.2rem;
       margin-bottom: 0.5rem;
+      color: #0077cc;
     }
+
     footer {
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
-      color: #666;
+      color: #777;
+      background: #fafafa;
+      border-top: 1px solid #eee;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -80,14 +104,14 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-<header> 
-  <img src="images/sr-lab.png" alt="Scientific Research Lab Logo" style="height:80px; margin-bottom:1rem;" />
+<header>
+  <img src="images/sr-lab.png" alt="Scientific Research Lab Logo" />
   <h1>ScientisR Research Lab</h1>
   <p class="subtitle">Empowering Responsible AI through Safety, Health, and Skill Development</p>
 </header>
 
 <section>
-  <h2>Our Focus Areas</h2>
+  <h2 class="section-title">Our Focus Areas</h2>
   <div class="grid">
     <div class="card">
       <h2>AI Safety Research</h2>
@@ -109,12 +133,12 @@
 </section>
 
 <section>
-  <h2>Join Us</h2>
-  <p>We collaborate with academic institutions, public sector partners, and industry to drive impact-driven research. Whether you’re a student, scientist, or policymaker — we’d love to work with you.</p>
+  <h2 class="section-title">Join Us</h2>
+  <p style="text-align:center;">We collaborate with academic institutions, public sector partners, and industry to drive impact-driven research.<br>Whether you’re a student, scientist, or policymaker — we’d love to work with you.</p>
 </section>
 
 <footer>
-  &copy; 2025 ScientisR Research Lab · Built with ❤️ and GitHub Pages
+  &copy; 2025 ScientisR Research Lab · Built with ❤️ using GitHub Pages · <a href="https://srlab.ai" style="color:#0077cc;">srlab.ai</a>
 </footer>
 
 </body>
